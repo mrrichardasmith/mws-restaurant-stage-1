@@ -1,0 +1,24 @@
+
+	1. convert body font-size from 10pt to 13px
+	2. Isolate Restaurant picture cards from a css perspective using dev tools
+
+		* # #restaurants-list - Use parent ul to convert list into row format with flexbox.
+		* # #restaurants-list
+
+			* display: flex;
+			* flex-wrap: wrap;
+			* Convert font-size to 1rem
+		* Take note of li margin 15px
+		* Take note of li padding top/0 leftright/30px bottom/25px;
+		* Take note of li width
+	3. Take note of the raw picture sizes 800 x 600px
+	4. Create media.css
+	5. Create first media Query (min-width: 720px) as below
+	6. Use Calc for a percentage width and a px margin. Take 100% viewport -20px for the margin and divide the remaining width by number of pictures for that size. 
+	7. width: calc((100% -20px)/3);
+	8. Create media queries to deal with the large page sizes that need a variety of different numbers of cards on the screen at different sizes
+	9. Create the media query to deal with the 480px and below
+	10. Identify the containers, #restaurant-container, #reviews-container
+	11. Created a new set of mobile pictures with grunt. 480x360px
+
+@media screen and (min-width: 480px) {#restaurants-list {display: flex;flex-wrap: wrap;}#restaurants-list li {max-width: 100%;}}@media screen and (min-width: 480px) and (max-width: 1131px) {#restaurants-list li a {background-color: red;}#restaurants-list li {margin-left: calc((100% - 60%)/4)}}@media screen and (min-width: 1132px) and (max-width: 1495px) {#restaurants-list li a {background-color: green;}#restaurants-list li {margin-left: calc((100% - 90%)/6)}}

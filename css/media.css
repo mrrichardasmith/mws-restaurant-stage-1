@@ -1,0 +1,40 @@
+@media screen and (min-width: 480px) {
+    
+    #restaurants-list    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #restaurants-list li {
+        max-width: 100%;   
+    }
+
+    #restaurant-container, #reviews-container   {
+        border: solid olivedrab 5px;
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 1131px) { 
+
+    #restaurants-list li a {
+        background-color: red;
+    }
+
+    #restaurants-list li {
+        margin-left: calc((100% - 60%)/4)
+    }
+}
+
+@media screen and (min-width: 1132px) and (max-width: 1495px) { 
+
+    #restaurants-list li a {
+        background-color: green;
+    }
+
+    #restaurants-list li {
+        margin-left: calc((100% - 90%)/6)
+    }
+}
+
